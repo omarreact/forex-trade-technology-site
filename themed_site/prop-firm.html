@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prop Firm CRM &amp; API | Prop Trading Management Software — BrokerSetup</title>
+<meta name="description" content="Prop firm CRM and API technology for challenge sales, trader accounts, rule enforcement, risk dashboards and payout reviews, connected to your trading platform.">
+<style>
+:root{--bs-ink:#161816;--bs-dark:#141613;--bs-deep:#101210;--bs-lime:#d9f17a;--bs-lime-strong:#cde760;--bs-stone:#f4f5f0;--bs-white:#fff;--bs-muted:#767970;--bs-border:#dedfd8;--bs-radius:22px;--bs-shell:min(1210px,calc(100% - 88px))}*,*::before,*::after{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:100px}body{margin:0;background:#fff;color:var(--bs-ink);font-family:Arial,Helvetica,sans-serif;-webkit-font-smoothing:antialiased}body .is-layout-constrained>:where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width:none}body .wp-site-blocks,body .wp-site-blocks>:where(*),body .wp-block-template-part{margin-block-start:0}body .wp-block-group{margin-block-start:0}a{text-decoration:none}button,input,textarea{font:inherit}button,a,input,textarea{outline-offset:3px}button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,summary:focus-visible{outline:3px solid #8fba00}img,svg{max-width:100%}h1,h2,h3,p{margin:0}h1,h2,h3{font-weight:600;letter-spacing:-.065em;line-height:1.04}h2{font-size:clamp(42px,4.9vw,72px)}h3{font-size:28px}.bs-section{width:100%;overflow:hidden}.bs-container{width:var(--bs-shell);margin-inline:auto}.bs-section-title{max-width:860px;margin:18px 0 32px}.bs-section-title em,.bs-hero-title em,.bs-contact .bs-section-title em{font-style:normal;color:var(--bs-lime)}.bs-accent-text{color:#80867e}.bs-kicker{font-size:12px;font-weight:800;line-height:1.4;letter-spacing:.17em;text-transform:uppercase}.bs-copy{font-size:17px;line-height:1.75;color:#5d615b;margin:15px 0 0;max-width:660px}.bs-site-header{position:relative;z-index:100;background:#fff;width:100%;border-bottom:1px solid #e5e5e0}.bs-site-header .bs-header-inner{width:var(--bs-shell);min-height:88px;margin-inline:auto;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:nowrap}.bs-wordmark,.bs-wordmark.wp-block-group{display:flex;align-items:center;min-width:200px}.bs-wordmark .wp-block-site-title{font-size:26px;font-weight:800;line-height:1;letter-spacing:-.075em;white-space:nowrap}.bs-wordmark .wp-block-site-title::after{content:'•';color:#86a627;font-size:31px;margin-left:1px}.bs-wordmark .wp-block-site-title a{text-decoration:none}.bs-site-header .bs-nav{display:flex;align-items:center;gap:26px;font-size:14px;font-weight:600}.bs-site-header .wp-block-navigation .wp-block-navigation-item__content{font-size:14px;font-weight:600}.bs-site-header .wp-block-navigation .wp-block-navigation-item__content:hover{color:#798b32}.bs-site-header .wp-block-buttons{flex-shrink:0}.wp-block-buttons{display:flex;gap:12px;flex-wrap:wrap}.bs-btn-primary .wp-block-button__link,.bs-btn-dark .wp-block-button__link,.bs-btn-line .wp-block-button__link,.bs-form-submit{display:inline-flex;align-items:center;justify-content:center;gap:26px;min-height:54px;border-radius:100px;font-size:14px;font-weight:800;line-height:1.2;padding:17px 23px;text-decoration:none;transition:transform .15s,background .15s,box-shadow .15s}.bs-btn-primary .wp-block-button__link{color:#171a14;background:var(--bs-lime)}.bs-btn-primary .wp-block-button__link:hover,.bs-form-submit:hover{background:#e5fb96;transform:translateY(-2px)}.bs-btn-dark .wp-block-button__link{background:#171915;color:#fff}.bs-btn-dark .wp-block-button__link:hover{background:#424638;transform:translateY(-2px)}.bs-btn-line .wp-block-button__link{background:transparent;color:var(--bs-dark);padding-inline:0;border-bottom:1px solid var(--bs-dark);border-radius:0}.bs-btn-line .wp-block-button__link:hover{gap:34px}.bs-site-header .wp-block-button__link{min-height:45px;padding:13px 20px}.bs-site-header .wp-block-navigation__responsive-container-content{gap:18px}.bs-hero{position:relative;background:radial-gradient(ellipse at 79% 38%,#30352b 0%,transparent 36%),linear-gradient(126deg,#0c0e0e 6%,#171a16 70%,#252c1e 100%);color:#fff;min-height:690px;display:flex;align-items:center;isolation:isolate}.bs-hero::before{content:'';position:absolute;inset:0;opacity:.3;background-image:linear-gradient(to right,transparent 99.8%,#64675d 100%),linear-gradient(to bottom,transparent 99.8%,#64675d 100%);background-size:92px 92px;mask-image:linear-gradient(to right,transparent 20%,#000 100%);z-index:-1}.bs-hero-wrap{width:var(--bs-shell);margin-inline:auto;position:relative;z-index:3;padding:95px 0 80px}.bs-hero-kicker{color:var(--bs-lime);margin-bottom:30px}.bs-hero-title{font-size:clamp(62px,6.75vw,108px);font-weight:500;line-height:1.01;max-width:1015px;letter-spacing:-.082em}.bs-hero-title em{display:block}.bs-hero-subtitle{font-size:clamp(18px,2vw,23px);line-height:1.5;max-width:590px;color:#c7cbc1;margin-top:28px}.bs-hero .wp-block-buttons{margin-top:31px}.bs-hero-index{font-weight:700;font-size:11px;letter-spacing:.12em;color:#a4ad9b;margin-top:84px}.bs-hero-orbit{position:absolute;z-index:1;right:-170px;top:52px;width:760px;height:650px;pointer-events:none;opacity:.68;transform:rotate(-20deg)}.bs-hero-orbit i{position:absolute;display:block;border:1px solid rgba(226,252,147,.20);border-radius:50%;inset:20px;box-shadow:0 0 100px rgba(177,207,73,.045)}.bs-hero-orbit i:nth-child(2){inset:80px;border-color:rgba(219,250,164,.25)}.bs-hero-orbit i:nth-child(3){inset:140px;border-width:26px;border-color:rgba(166,209,85,.12);filter:blur(1px)}.bs-hero-orbit::after{content:'✦';position:absolute;top:9%;left:25%;font-size:60px;color:var(--bs-lime);opacity:.8}.bs-about{padding:112px 0 116px}.bs-about-top{display:grid;grid-template-columns:.95fr 1.05fr;gap:85px;align-items:center}.bs-about-left{max-width:580px}.bs-about .bs-section-title{margin-bottom:25px}.bs-subheading{font-size:clamp(22px,2.3vw,32px);letter-spacing:-.035em;line-height:1.24;max-width:590px;margin-bottom:21px}.bs-image-stack{position:relative;height:490px}.bs-image-panel{position:absolute;overflow:hidden;border-radius:12px;box-shadow:0 28px 55px rgba(19,21,17,.13)}.bs-image-one{left:2%;top:0;width:77%;height:73%;background:linear-gradient(145deg,#d7d8cf 0%,#f6f3e9 40%,#c1c5bb 100%)}.bs-image-one:before{content:'';position:absolute;left:0;top:0;width:100%;height:16%;background:linear-gradient(90deg,#acb6ac 1px,transparent 1px);background-size:25% 100%;opacity:.3}.bs-art-sun{position:absolute;background:#e0b7a0;width:170px;height:170px;border-radius:50%;top:14%;left:40%;box-shadow:0 0 0 35px rgba(255,255,255,.27)}.bs-art-table{position:absolute;left:-10%;width:122%;height:25%;bottom:0;transform:skewY(-5deg);background:#9f816b}.bs-art-laptop{position:absolute;left:40%;bottom:12%;width:42%;height:35%;border-radius:9px 9px 0 0;transform:skew(-8deg);background:linear-gradient(90deg,#717979,#a7b0ac)}.bs-art-person{position:absolute;left:18%;bottom:0;width:33%;height:55%;border-radius:40% 40% 3px 3px;background:#a36c4f;clip-path:polygon(20% 0,75% 0,92% 35%,100% 100%,0 100%,0 35%)}.bs-image-two{right:0;bottom:0;width:58%;height:54%;background:linear-gradient(130deg,#7e8580,#c4c9c1)}.bs-art-paper{position:absolute;left:20%;top:7%;width:65%;height:75%;background:#f5f3ed;transform:rotate(12deg);box-shadow:0 10px 15px #61676144}.bs-art-paper:after{content:'';position:absolute;left:13%;top:25%;height:2px;width:70%;box-shadow:0 17px #a5aca9,0 33px #a5aca9,0 49px #a5aca9,0 65px #a5aca9;background:#a5aca9}.bs-art-phone{position:absolute;width:29%;height:65%;border:9px solid #232827;left:8%;top:18%;border-radius:15px;transform:rotate(-17deg);background:#d6dfdd}.bs-art-pencil{position:absolute;width:5px;height:150px;right:10%;top:6%;transform:rotate(38deg);background:#2e3230}.bs-image-label{position:absolute;bottom:20px;left:0;font-size:11px;letter-spacing:.1em;font-weight:800}.bs-image-label b{font-size:20px;margin-left:8px}.bs-about-bottom{display:grid;grid-template-columns:1fr 1.06fr;gap:85px;border-top:1px solid #deded8;margin-top:90px;padding-top:60px}.bs-star-icon{color:#82952f;font-size:125px;line-height:1}.bs-mid-title{font-size:clamp(34px,3.8vw,56px);margin-bottom:20px}.bs-about-bottom-copy .wp-block-buttons{margin-top:19px}.bs-roadmap{background:#f3f4ef;padding:110px 0 118px}.bs-roadmap .bs-section-title{max-width:680px}.bs-roadmap-intro{max-width:760px;font-size:17px;line-height:1.65;color:#6c7069;margin:0 0 52px}.bs-step-timeline{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));border-bottom:1px solid #bfc4b7;margin-bottom:38px}.bs-timeline-item{padding:12px 19px 25px;border-left:1px solid #d9dcd1;min-height:119px;display:flex;flex-direction:column;justify-content:space-between;color:var(--bs-dark);position:relative}.bs-timeline-item:hover{background:#e6edcf}.bs-timeline-item:before{content:'';width:9px;height:9px;background:#a7b64b;border-radius:50%;position:absolute;left:-5px;bottom:-5px}.bs-timeline-item:first-child{border-left:0;padding-left:0}.bs-timeline-item:first-child:before{left:0}.bs-timeline-item small{font-size:11px;color:#797d73;letter-spacing:.08em;font-weight:700}.bs-timeline-item span{font-size:17px;font-weight:700;line-height:1.2;letter-spacing:-.03em}.bs-timeline-item b{position:absolute;right:17px;bottom:20px;font-size:17px}.bs-steps-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.bs-step-card{min-height:285px;display:flex;flex-direction:column;justify-content:space-between;background:white;border-radius:13px;padding:28px;border:1px solid #e5e5df;box-shadow:0 16px 30px rgba(25,29,25,.025)}.bs-step-no{font-weight:800;color:#8c9655;font-size:13px}.bs-step-title{font-size:28px;max-width:290px;letter-spacing:-.06em}.bs-step-desc{font-size:14px;color:#747871;line-height:1.6;max-width:300px}.bs-step-time{font-weight:800;font-size:11px;letter-spacing:.07em;color:#555c4d;margin-top:24px}.bs-pricing{padding:75px 0;background:var(--bs-lime)}.bs-pricing .bs-price-grid{display:grid;grid-template-columns:1.3fr .65fr;column-gap:50px;align-items:center;position:relative}.bs-pricing .bs-section-title{font-size:clamp(43px,4vw,62px);max-width:710px;margin:12px 0}.bs-pricing .bs-section-title em{color:#6d792e}.bs-pricing .bs-copy{color:#454b33;max-width:610px;margin-top:8px}.bs-price-box{padding:34px;background:rgba(255,255,255,.35);border-radius:22px;border:1px solid rgba(28,38,15,.2)}.bs-price-label{font-size:11px;letter-spacing:.08em;font-weight:800}.bs-price{font-size:clamp(58px,5vw,80px);margin:12px 0 22px}.bs-advantages{padding:115px 0}.bs-adv-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:55px}.bs-adv-card{position:relative;padding:33px;min-height:292px;display:flex;flex-direction:column;background:#f4f5f1;border-radius:15px;transition:transform .2s,background .2s}.bs-adv-card:hover{transform:translateY(-5px);background:#eaf0db}.bs-adv-index{color:#87907f;font-size:12px;font-weight:800}.bs-feature-symbol{width:67px;height:67px;border:1px solid #acba87;border-radius:50%;display:grid;place-items:center;position:relative;margin:29px 0 28px}.bs-feature-symbol:before{content:none!important}.bs-adv-02 .bs-feature-symbol:before{content:'↗'}.bs-adv-03 .bs-feature-symbol:before{content:'◇'}.bs-adv-04 .bs-feature-symbol:before{content:'✓'}.bs-adv-05 .bs-feature-symbol:before{content:'◎'}.bs-adv-06 .bs-feature-symbol:before{content:'∞'}.bs-adv-title{font-size:25px;letter-spacing:-.05em;margin-bottom:13px}.bs-adv-copy{font-size:14px;line-height:1.6;color:#777b73}.bs-advantages-cta{display:flex;justify-content:space-between;align-items:center;border-top:1px solid #dedfd8;padding-top:36px;margin-top:47px;gap:24px}.bs-adv-cta-copy{font-size:21px;letter-spacing:-.03em;font-weight:600}.bs-faq{padding:115px 0;background:#f5f6f2}.bs-faq-layout{display:grid;grid-template-columns:.8fr 1.2fr;gap:100px}.bs-faq-heading{position:sticky;top:45px;align-self:start}.bs-faq .bs-section-title{font-size:clamp(42px,4.3vw,63px)}.bs-faq-accordion details{border-bottom:1px solid #cfd1ca;padding:0;background:none}.bs-faq-accordion details:first-child{border-top:1px solid #cfd1ca}.bs-faq-accordion summary{cursor:pointer;font-size:19px;font-weight:600;letter-spacing:-.03em;line-height:1.4;padding:24px 42px 24px 0;list-style:none;position:relative}.bs-faq-accordion summary::-webkit-details-marker{display:none}.bs-faq-accordion summary:after{content:'+';position:absolute;right:4px;top:20px;font-size:27px;font-weight:400}.bs-faq-accordion details[open] summary:after{content:'−'}.bs-faq-accordion details p{color:#73786f;font-size:15px;line-height:1.7;max-width:620px;padding:0 42px 24px 0}.bs-contact{background:linear-gradient(135deg,#181c15,#0d100e);color:#fff;padding:113px 0 110px;position:relative}.bs-contact:before{content:'✳';position:absolute;font-size:390px;right:15%;top:-50px;color:rgba(205,243,117,.028);line-height:1}.bs-contact-layout{display:grid;grid-template-columns:.9fr 1.1fr;gap:90px;position:relative}.bs-contact .bs-kicker{color:var(--bs-lime)}.bs-contact .bs-section-title{font-size:clamp(48px,5vw,77px);max-width:520px}.bs-contact .bs-copy{color:#bfc3b9;font-size:18px}.bs-contact-email{font-size:17px;margin-top:40px;color:var(--bs-lime);overflow-wrap:anywhere}.bs-contact-form{display:flex;flex-direction:column;gap:20px;background:#f5f6f0;color:#171915;padding:37px;border-radius:21px;box-shadow:0 18px 60px #0002}.bs-form-head{display:flex;justify-content:space-between;font-size:12px;font-weight:800;letter-spacing:.13em;padding-bottom:12px;border-bottom:1px solid #d5d9cb}.bs-form-head span:last-child{font-size:22px}.bs-form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}.bs-contact-form label{display:block;font-size:11px;letter-spacing:.09em;font-weight:800;text-transform:uppercase}.bs-contact-form input,.bs-contact-form textarea{display:block;width:100%;margin-top:10px;padding:13px 0;background:none;border:0;border-bottom:1px solid #b8bfb0;border-radius:0;font-size:15px;font-weight:400;letter-spacing:normal;color:#161a14;text-transform:none;resize:vertical}.bs-contact-form input:focus,.bs-contact-form textarea:focus{border-color:#6b852e;outline:0}.bs-contact-form input::placeholder,.bs-contact-form textarea::placeholder{color:#8b8f86}.bs-form-submit{background:#20231d;color:#fff;border:none;width:100%;justify-content:space-between;cursor:pointer;margin-top:8px}.bs-contact-form small{font-size:11px;color:#74796d}.bs-form-status{color:#384d22;font-size:13px}.bs-form-status.bs-error{color:#a72c23}.bs-honeypot{position:absolute;left:-100000px;opacity:0;height:0;width:0;overflow:hidden}.bs-site-footer{padding:80px 0 30px;background:#0f110f;color:#f4f6ef}.bs-footer-inner{width:var(--bs-shell);margin-inline:auto}.bs-footer-grid{display:grid;grid-template-columns:2fr 1fr 1.3fr;gap:55px;margin-bottom:90px}.bs-footer-logo{font-size:40px;letter-spacing:-.075em}.bs-brand-dot{color:var(--bs-lime)}.bs-footer-desc{max-width:340px;font-size:15px;line-height:1.7;color:#9b9f94;margin-top:18px}.bs-footer-heading{font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:#93988d;font-weight:800;margin:0 0 18px}.bs-footer-links p,.bs-footer-contact p{font-size:16px;margin:0 0 11px}.bs-site-footer a:hover{color:var(--bs-lime)}.bs-footer-bottom{padding-top:24px;border-top:1px solid #30372b;color:#8c9187;font-size:12px;line-height:1.7}.bs-generic-page{width:var(--bs-shell);margin:0 auto;padding:100px 0;min-height:55vh}.bs-generic-page h1{font-size:60px;margin-bottom:30px}
+@media(max-width:1100px){:root{--bs-shell:min(100% - 56px,1210px)}.bs-site-header .bs-header-inner{gap:14px}.bs-wordmark,.bs-wordmark.wp-block-group{min-width:160px}.bs-about-top,.bs-about-bottom{gap:48px}.bs-contact-layout{gap:44px}.bs-faq-layout{gap:54px}.bs-hero-orbit{right:-330px}}
+@media(max-width:800px){:root{--bs-shell:calc(100% - 42px)}.bs-header-inner{min-height:72px!important}.bs-wordmark .wp-block-site-title{font-size:24px}.bs-site-header .bs-header-inner>.wp-block-buttons{display:none}.bs-hero{min-height:660px}.bs-hero-wrap{padding:85px 0 70px}.bs-hero-title{font-size:clamp(54px,8.3vw,75px)}.bs-hero-orbit{top:200px;right:-320px;opacity:.3}.bs-about-top,.bs-about-bottom,.bs-pricing .bs-price-grid,.bs-faq-layout,.bs-contact-layout{grid-template-columns:1fr}.bs-about,.bs-roadmap,.bs-advantages,.bs-faq,.bs-contact{padding:75px 0}.bs-image-stack{max-width:570px;margin:0 auto;width:100%;height:430px}.bs-about-bottom{margin-top:65px;padding-top:30px;gap:13px}.bs-star-icon{font-size:68px}.bs-step-timeline{overflow-x:auto;display:flex;scroll-snap-type:x mandatory}.bs-timeline-item{flex:0 0 182px;scroll-snap-align:start}.bs-steps-grid,.bs-adv-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.bs-pricing .bs-price-box{max-width:520px}.bs-adv-card{min-height:260px}.bs-faq-heading{position:static}.bs-footer-grid{grid-template-columns:1fr 1fr;gap:35px}.bs-footer-brand{grid-column:1/-1}.bs-site-header .wp-block-navigation__responsive-container-open{display:block}.bs-site-header .wp-block-navigation__responsive-container:not(.is-menu-open){display:none}}
+@media(max-width:560px){:root{--bs-shell:calc(100% - 36px)}h2{font-size:40px}h3{font-size:25px}.bs-site-header .bs-wordmark{min-width:0}.bs-hero{min-height:630px}.bs-hero-wrap{padding:65px 0 58px}.bs-hero-title{font-size:clamp(49px,13vw,69px);max-width:100%}.bs-hero-title em{display:inline}.bs-hero-index{margin-top:74px}.bs-hero-subtitle{font-size:17px}.bs-hero-orbit{right:-450px}.bs-about,.bs-roadmap,.bs-advantages,.bs-faq,.bs-contact{padding:68px 0}.bs-about-top{gap:38px}.bs-about .bs-section-title{font-size:43px}.bs-copy,.bs-roadmap-intro{font-size:15px}.bs-image-stack{height:330px}.bs-image-label{font-size:9px}.bs-about-bottom{margin-top:40px}.bs-star-icon{font-size:62px}.bs-steps-grid,.bs-adv-grid{grid-template-columns:1fr}.bs-step-card{min-height:218px}.bs-adv-card{min-height:224px}.bs-feature-symbol{margin:18px 0}.bs-pricing{padding:55px 0}.bs-pricing .bs-section-title{font-size:44px}.bs-price-box{padding:26px;margin-top:23px}.bs-advantages-cta{align-items:flex-start;flex-direction:column}.bs-faq .bs-section-title{font-size:44px}.bs-faq-accordion summary{font-size:17px}.bs-contact .bs-section-title{font-size:51px}.bs-contact-form{padding:24px 21px}.bs-form-row{grid-template-columns:1fr;gap:20px}.bs-footer-grid{grid-template-columns:1fr;gap:35px;margin-bottom:50px}.bs-footer-brand{grid-column:auto}.bs-btn-primary .wp-block-button__link{min-height:52px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important}}
+
+.bs-wordmark .bs-logo-text{font-size:26px;font-weight:800;line-height:1;letter-spacing:-.075em;white-space:nowrap}.bs-wordmark .bs-logo-text::after{content:"•";color:#86a627;font-size:31px;margin-left:1px}.bs-wordmark .bs-logo-text a{color:inherit;text-decoration:none}
+
+
+
+/* One horizontal navigation with a second inline row for its submenu.
+   No modal, popup, dropdown overlay, off-canvas drawer, or sliding transition. */
+.bs-site-header .bs-header-inner {flex-wrap:wrap;}
+.bs-inline-nav,.bs-site-header .bs-inline-nav {display:flex;flex-direction:column;justify-content:center;align-items:stretch;gap:0;min-width:0;flex:1;}
+.bs-inline-nav .bs-nav-primary {display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:24px;min-height:22px;}
+.bs-inline-nav a,.bs-inline-nav .bs-nav-toggle {color:var(--bs-dark);font-size:14px;font-weight:600;line-height:1.5;text-decoration:none;white-space:nowrap;}
+.bs-inline-nav a:hover,.bs-inline-nav .bs-nav-toggle:hover {color:#798b32;}
+.bs-inline-nav .bs-nav-toggle {display:inline-flex;align-items:center;gap:5px;background:none;border:0;padding:0;cursor:pointer;font-family:inherit;}
+.bs-inline-nav .bs-chevron {font-size:15px;line-height:1;font-weight:400;transition:transform .15s;}
+.bs-inline-nav .bs-nav-toggle[aria-expanded="true"] .bs-chevron {transform:rotate(180deg);}
+.bs-inline-nav .bs-nav-submenu[hidden] {display:none!important;}
+.bs-inline-nav .bs-nav-submenu:not([hidden]) {position:static;display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:11px 20px;width:100%;max-width:none;background:transparent;box-shadow:none;padding:13px 0 0;margin-top:13px;border-top:1px solid #dedfd8;}
+.bs-inline-nav .bs-nav-submenu a {font-size:13px;font-weight:500;}
+@media (min-width:801px) {
+ .bs-site-header .bs-header-inner:has(.bs-nav-submenu:not([hidden])) {align-items:flex-start;padding-top:22px;padding-bottom:22px;}
+}
+.bs-step-card:nth-child(1),.bs-step-card:nth-child(2),.bs-step-card:nth-child(3),.bs-step-card:nth-child(4),.bs-step-card:nth-child(5) {scroll-margin-top:110px;}
+.bs-form-status:not(:empty) {display:block;margin:0;line-height:1.5;}
+@media (max-width:1050px) {
+ .bs-inline-nav .bs-nav-primary {gap:14px;}
+ .bs-inline-nav a,.bs-inline-nav .bs-nav-toggle {font-size:13px;}
+}
+@media (max-width:800px) {
+ .bs-site-header .bs-header-inner {padding:15px 0;align-items:center;row-gap:13px;min-height:72px!important;}
+ .bs-inline-nav,.bs-site-header .bs-inline-nav {display:flex!important;flex:1 0 100%;order:3;justify-content:flex-start;align-items:stretch;border-top:1px solid #e5e5e0;padding-top:13px;}
+ .bs-inline-nav .bs-nav-primary {justify-content:flex-start;gap:15px 22px;}
+ .bs-inline-nav .bs-nav-submenu:not([hidden]) {justify-content:flex-start;gap:12px 17px;}
+ .bs-site-header .bs-header-inner>.wp-block-buttons {display:flex;}
+ .bs-site-header .bs-header-inner>.wp-block-buttons .wp-block-button__link {min-height:38px;font-size:12px;padding:10px 14px;}
+ .bs-site-header .bs-header-inner>.wp-block-buttons .wp-block-button__link span {display:none;}
+}
+@media (max-width:560px) {
+ .bs-site-header .bs-header-inner {gap:8px 10px;}
+ .bs-inline-nav .bs-nav-primary {gap:13px 17px;}
+ .bs-inline-nav a,.bs-inline-nav .bs-nav-toggle {font-size:12px;}
+ .bs-inline-nav .bs-nav-submenu a {font-size:12px;}
+}
+
+
+/* Design refresh: match the live Forex Trade Technology home page. */
+:root{--bs-shell:min(1320px,calc(100% - 88px));--bs-lime:#d9f17a;--bs-green:#b7d76b;--bs-ink:#151a16;--bs-dark:#121914}
+body{font-family:Inter,Manrope,Arial,sans-serif;color:#182019}
+.bs-site-header{position:sticky;top:0;box-shadow:0 8px 22px rgba(16,24,17,.06)}
+.bs-site-header .bs-header-inner{min-height:82px}
+.bs-wordmark .bs-logo-text{font-family:Manrope,Inter,sans-serif;font-size:25px;letter-spacing:-.075em}
+.bs-inline-nav .bs-nav-primary{gap:clamp(14px,2vw,29px)}
+.bs-hero{min-height:clamp(630px,68vw,760px);background-image:linear-gradient(90deg,rgba(8,24,17,.93) 0%,rgba(8,26,19,.82) 42%,rgba(10,24,18,.35) 100%),url('https://images.pexels.com/photos/5833747/pexels-photo-5833747.jpeg?auto=compress&cs=tinysrgb&w=1800');background-size:cover;background-position:center 53%;}
+.bs-hero::before{opacity:.18;mask-image:linear-gradient(90deg,transparent,#000 80%)}
+.bs-hero-wrap{max-width:880px;margin-left:max(calc((100% - 1320px)/2),44px);padding:96px 0 84px}
+.bs-hero-kicker{display:flex;align-items:center;gap:12px;color:var(--bs-lime);font-size:11px;letter-spacing:.18em}
+.bs-hero-kicker::before{content:'';width:28px;height:2px;background:var(--bs-lime)}
+.bs-hero-title{max-width:900px;font-family:Manrope,Inter,sans-serif;font-size:clamp(55px,6.1vw,88px);font-weight:700;letter-spacing:-.075em;line-height:1.02}
+.bs-hero-title em{display:inline;color:#c3e284}
+.bs-hero-subtitle{max-width:650px;font-size:clamp(17px,1.6vw,21px);line-height:1.62;color:#e0e8dd}
+.bs-hero-index{color:#e3ebde;margin-top:67px}
+.bs-hero-orbit{right:-210px;opacity:.36}
+.bs-section-title,.bs-mid-title,.bs-step-title,.bs-adv-title{font-family:Manrope,Inter,sans-serif}
+.bs-section-title em,.bs-hero-title em,.bs-contact .bs-section-title em{color:#a9cf54}
+.bs-accent-text{color:#88a94b}
+.bs-about{padding:clamp(82px,9vw,126px) 0}
+.bs-about-top{grid-template-columns:1fr 1fr;gap:clamp(48px,7vw,105px)}
+.bs-image-stack{height:470px}
+.bs-image-panel{border-radius:18px}
+.bs-image-one{background:linear-gradient(145deg,#dae2d6 0%,#f1f3ea 43%,#aebcae 100%)}
+.bs-image-two{background:linear-gradient(130deg,#768d7e,#dce3d9)}
+.bs-about-bottom{margin-top:78px}
+.bs-star-icon{color:#91b835}
+.bs-roadmap{position:relative;isolation:isolate;color:#f7faef;background-color:#111914;background-image:linear-gradient(90deg,rgba(9,22,16,.94),rgba(10,25,18,.84)),url('https://images.pexels.com/photos/5833747/pexels-photo-5833747.jpeg?auto=compress&cs=tinysrgb&w=1800');background-size:cover;background-position:center 45%;background-attachment:fixed;padding:clamp(88px,10vw,132px) 0}
+.bs-roadmap::before{content:'';position:absolute;z-index:-1;inset:0;background:radial-gradient(ellipse at 84% 24%,rgba(185,225,105,.13),transparent 37%)}
+.bs-roadmap .bs-section-title{color:#fff;max-width:780px}
+.bs-roadmap .bs-accent-text{color:var(--bs-lime)}
+.bs-roadmap .bs-roadmap-intro{color:#c7d0c4;max-width:720px}
+.bs-roadmap .bs-step-timeline{border-color:rgba(228,242,213,.22)}
+.bs-timeline-item{color:#f3f6ed;border-color:rgba(228,242,213,.16);transition:background .2s,transform .2s}
+.bs-timeline-item:hover{background:rgba(217,241,122,.13);transform:translateY(-3px)}
+.bs-timeline-item small{color:var(--bs-lime)}
+.bs-steps-grid{grid-template-columns:repeat(5,minmax(0,1fr));gap:14px}
+.bs-step-card{position:relative;min-height:260px;padding:25px 22px 22px;border-radius:16px;background:rgba(21,32,24,.86);border:1px solid rgba(232,243,219,.18);color:#f5f7ef;backdrop-filter:blur(9px);transition:transform .2s,border-color .2s,background .2s}
+.bs-step-card:hover{transform:translateY(-6px);border-color:rgba(217,241,122,.65);background:rgba(29,44,30,.92)}
+.bs-step-no{color:var(--bs-lime)}
+.bs-step-title{font-size:clamp(20px,1.7vw,24px);letter-spacing:-.045em}
+.bs-step-desc{color:#c5cec2;line-height:1.65}
+.bs-step-time{color:#d9f17a}
+.bs-step-icon{width:48px;height:48px;display:grid;place-items:center;margin:22px 0 16px;border:1px solid rgba(217,241,122,.28);border-radius:14px;background:rgba(217,241,122,.08);color:var(--bs-lime)}
+.bs-icon-svg{display:block;width:26px;height:26px}
+.bs-step-icon .bs-icon-svg{width:25px;height:25px}
+.bs-pricing{position:relative;overflow:hidden;background:#eff3e7;padding:clamp(78px,9vw,116px) 0}
+.bs-price-grid{grid-template-columns:1fr .72fr;align-items:center;gap:30px 8vw}
+.bs-price-grid>.bs-kicker,.bs-price-grid>.bs-section-title,.bs-price-grid>.bs-copy{grid-column:1}
+.bs-price-box{grid-column:2;grid-row:1 / span 4;margin:0;padding:clamp(34px,4vw,54px);border-radius:22px;background:#fff;box-shadow:0 22px 70px rgba(22,36,22,.1);border:1px solid #e1e9d4}
+.bs-price{font-family:Manrope,Inter,sans-serif;color:#1b2519}
+.bs-price-label{color:#718444}
+.bs-advantages{padding:clamp(88px,9vw,120px) 0;background:#fff}
+.bs-adv-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.bs-adv-card{min-height:280px;border:1px solid #e1e7d9;border-radius:18px;padding:27px;background:linear-gradient(145deg,#f8faf5,#edf3e6);transition:transform .2s,box-shadow .2s,border-color .2s}
+.bs-adv-card:hover{transform:translateY(-5px);border-color:#c8dc9d;box-shadow:0 18px 40px rgba(22,36,22,.09)}
+.bs-adv-index{color:#789742}
+.bs-feature-symbol{width:54px;height:54px;display:grid;place-items:center;margin:20px 0 22px;border-radius:16px;background:#1b2a1d;color:var(--bs-lime);box-shadow:0 8px 18px rgba(22,36,22,.12)}
+.bs-feature-symbol .bs-icon-svg{width:27px;height:27px}
+.bs-adv-title{font-size:24px;letter-spacing:-.045em}
+.bs-adv-copy{color:#616b5e;line-height:1.65}
+.bs-advantages-cta{margin-top:40px;border-radius:18px;background:#edf3e5}
+.bs-faq{padding:clamp(84px,9vw,120px) 0;background:#f5f7f1}
+.bs-faq-layout{gap:clamp(42px,8vw,110px)}
+.bs-faq-heading{top:120px}
+.bs-faq-accordion details{border-color:#dce3d5}
+.bs-faq-accordion summary{font-family:Manrope,Inter,sans-serif;font-weight:700}
+.bs-contact{padding:clamp(80px,9vw,116px) 0;background:#111914;color:#f7f8f1}
+.bs-contact .bs-section-title{color:#fff}
+.bs-contact .bs-copy{color:#c0c9bc}
+.bs-contact .bs-kicker{color:var(--bs-lime)}
+.bs-contact-email{color:#d9f17a}
+.bs-contact-form{border:1px solid rgba(230,241,220,.13);border-radius:20px;background:#19241b;box-shadow:0 22px 60px rgba(0,0,0,.18)}
+.bs-contact-form label,.bs-contact-form small{color:#c7d1c3}
+.bs-contact-form input,.bs-contact-form textarea{background:#101812;color:#fff;border-color:#394839}
+.bs-contact-form input::placeholder,.bs-contact-form textarea::placeholder{color:#869184}
+.bs-site-footer{background:#0d130e}
+.bs-footer-logo{font-family:Manrope,Inter,sans-serif}
+.bs-brand-dot{color:var(--bs-lime)}
+@media(max-width:1050px){.bs-steps-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.bs-step-card{min-height:245px}.bs-about-top,.bs-about-bottom{gap:50px}}
+@media(max-width:800px){:root{--bs-shell:calc(100% - 42px)}.bs-hero-wrap{width:var(--bs-shell);margin-inline:auto}.bs-roadmap{background-attachment:scroll}.bs-steps-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.bs-price-grid{grid-template-columns:1fr;gap:14px}.bs-price-grid>.bs-kicker,.bs-price-grid>.bs-section-title,.bs-price-grid>.bs-copy,.bs-price-box{grid-column:1;grid-row:auto}.bs-price-box{margin-top:12px}.bs-adv-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){:root{--bs-shell:calc(100% - 36px)}.bs-hero{min-height:650px;background-position:58% center}.bs-hero-wrap{padding:70px 0}.bs-hero-title{font-size:clamp(48px,12vw,66px)}.bs-hero-orbit{right:-470px}.bs-about-top{grid-template-columns:1fr}.bs-image-stack{height:340px}.bs-steps-grid,.bs-adv-grid{grid-template-columns:1fr}.bs-step-card{min-height:220px}.bs-roadmap{padding:76px 0}.bs-roadmap .bs-step-timeline{margin-right:-18px}.bs-footer-grid{grid-template-columns:1fr}.bs-footer-brand{grid-column:auto}}
+@media(prefers-reduced-motion:reduce){.bs-roadmap{background-attachment:scroll}.bs-step-card,.bs-timeline-item,.bs-adv-card{transition:none}}
+
+
+/* Content page adaptations */
+.bs-page-hero {
+  background: linear-gradient(126deg, #0c0e0e 6%, #171a16 70%, #252c1e 100%);
+  color: #fff;
+  padding: 110px 0 80px;
+  position: relative;
+}
+.bs-page-hero .bs-kicker { color: var(--bs-lime); margin-bottom: 18px; }
+.bs-page-hero h1 {
+  font-family: Manrope, Inter, sans-serif;
+  font-size: clamp(42px, 5.2vw, 68px);
+  font-weight: 700;
+  letter-spacing: -0.07em;
+  line-height: 1.08;
+  max-width: 900px;
+}
+.bs-page-hero .bs-hero-subtitle {
+  font-size: clamp(17px, 1.6vw, 20px);
+  line-height: 1.6;
+  color: #c7cbc1;
+  margin-top: 22px;
+  max-width: 640px;
+}
+.bs-content-section {
+  padding: clamp(70px, 8vw, 110px) 0;
+  background: #fff;
+}
+.bs-content-section.alt {
+  background: #f5f6f2;
+}
+.bs-content-block {
+  max-width: 820px;
+}
+.bs-content-block h2 {
+  font-family: Manrope, Inter, sans-serif;
+  font-size: clamp(32px, 3.8vw, 48px);
+  letter-spacing: -0.05em;
+  margin: 0 0 20px;
+  color: #151a16;
+}
+.bs-content-block h3 {
+  font-family: Manrope, Inter, sans-serif;
+  font-size: 22px;
+  letter-spacing: -0.03em;
+  margin: 36px 0 12px;
+  color: #1b2a1d;
+}
+.bs-content-block p {
+  font-size: 16.5px;
+  line-height: 1.75;
+  color: #5d615b;
+  margin: 0 0 16px;
+}
+.bs-content-block ul {
+  margin: 12px 0 20px 22px;
+  color: #5d615b;
+}
+.bs-content-block li {
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+.bs-trust-strip {
+  background: #edf3e5;
+  border-radius: 16px;
+  padding: 22px 28px;
+  font-size: 15px;
+  color: #4a5540;
+  margin: 28px 0;
+  border-left: 4px solid var(--bs-lime);
+}
+.bs-cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin: 32px 0 10px;
+}
+.bs-meta-box {
+  background: #f4f5f1;
+  border: 1px solid #e1e7d9;
+  border-radius: 14px;
+  padding: 20px 24px;
+  margin-bottom: 40px;
+  font-size: 14px;
+}
+.bs-meta-box dt {
+  font-weight: 700;
+  color: #718444;
+  margin-top: 10px;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.bs-meta-box dt:first-child { margin-top: 0; }
+.bs-meta-box dd {
+  margin: 4px 0 0;
+  color: #333;
+}
+.bs-faq-item {
+  border-bottom: 1px solid #dce3d5;
+}
+.bs-faq-item summary {
+  cursor: pointer;
+  font-family: Manrope, Inter, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  padding: 22px 40px 22px 0;
+  list-style: none;
+  position: relative;
+}
+.bs-faq-item summary::-webkit-details-marker { display: none; }
+.bs-faq-item summary::after {
+  content: '+';
+  position: absolute;
+  right: 4px;
+  top: 20px;
+  font-size: 24px;
+  font-weight: 400;
+}
+.bs-faq-item[open] summary::after { content: '−'; }
+.bs-faq-item p {
+  color: #73786f;
+  font-size: 15px;
+  line-height: 1.7;
+  padding: 0 40px 22px 0;
+  max-width: 640px;
+}
+
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="bs-static-preview">
+<div class="wp-site-blocks">
+<header class="wp-block-group alignfull bs-site-header">
+<div class="wp-block-group bs-header-inner">
+<div class="wp-block-group bs-wordmark">
+<p class="bs-logo-text"><a href="index.html">BrokerSetup</a></p>
+</div>
+<nav class="wp-block-navigation bs-nav bs-inline-nav" aria-label="Primary navigation">
+<div class="bs-nav-primary">
+<a class="bs-nav-link" href="index.html">Home</a><button class="bs-nav-toggle" type="button" aria-expanded="false" aria-controls="bs-solutions-submenu">Solutions <span aria-hidden="true" class="bs-chevron">▾</span></button><a class="bs-nav-link" href="how-it-works.html">How It Works</a><a class="bs-nav-link" href="about.html">About</a><a class="bs-nav-link" href="faq.html">FAQ</a>
+</div>
+<div class="bs-nav-submenu" id="bs-solutions-submenu" aria-label="Solutions submenu" hidden>
+<a href="brokerage-setup.html">Brokerage Setup</a>
+<a href="mt5-white-label.html">MT5 White Label</a>
+<a href="hosting.html">Trading Server Hosting</a>
+<a href="liquidity.html">Liquidity & Connectivity</a>
+<a href="crm.html">Forex CRM</a>
+<a href="kyc-aml.html">KYC & AML Integration</a>
+<a href="payments.html">Payment Gateway</a>
+<a href="prop-firm.html">Prop Firm Technology</a>
+</div>
+</nav>
+<div class="wp-block-buttons">
+<div class="wp-block-button bs-btn-dark"><a class="wp-block-button__link wp-element-button" href="contact.html">Contact Us <span aria-hidden="true">↗</span></a></div>
+</div>
+</div>
+</header>
+
+<section class="bs-page-hero">
+  <div class="bs-container">
+    <p class="bs-kicker">FOREX BROKERAGE TECHNOLOGY</p>
+    <h1>Prop Firm CRM API &amp; Trading Technology</h1>
+    <p class="bs-hero-subtitle">Breadcrumb: Home &gt; Products &gt; Prop Firm CRM API</p>
+    <div class="wp-block-buttons bs-cta-row"><div class="wp-block-button bs-btn-primary"><a class="wp-block-button__link wp-element-button" href="contact.html">Request a Consultation <span aria-hidden="true">↗</span></a></div></div>
+  </div>
+</section>
+
+<section class="bs-content-section">
+  <div class="bs-container">
+    <div class="bs-content-block">
+      
+      <p>Breadcrumb: Home &gt; Products &gt; Prop Firm CRM API</p>
+<p>Label: Prop Trading Operations</p>
+<p>Running a prop firm means watching thousands of evaluation accounts at once, each with its own target, drawdown limit and deadline. A trader breaches a rule at 3am and the account needs closing. Another passes and expects their funded account by morning. Someone requests a payout, and your team has to confirm the trading behind it was genuine.</p>
+<p>Doing that by hand doesn&#x27;t scale past a few hundred traders. Our prop firm CRM and API tools automate the routine parts, from selling challenges and creating accounts to enforcing rules, tracking performance and preparing payouts for review.</p>
+<p>A brokerage cares about deposits, trading activity and client retention. A prop firm&#x27;s concerns sit somewhere else entirely. You&#x27;re selling evaluations, measuring traders against strict rules, deciding who progresses, and paying out a share of profits to the ones who succeed.</p>
+<p>Standard broker CRMs weren&#x27;t built for that cycle. They don&#x27;t know what a daily loss limit is, can&#x27;t move a trader from phase one to phase two, and won&#x27;t tell you that three accounts are copying each other&#x27;s trades. Prop firms need tooling designed around evaluation logic, and that&#x27;s what this is.</p>
+<h2>What Makes Prop Firm Operations Different</h2>
+<p>* New prop firms planning their first challenge programme</p>
+<p>* Growing firms whose manual checks are starting to miss breaches or delay funded accounts</p>
+<p>* Brokers adding a prop trading division alongside their regular business</p>
+<p>* Firms moving to a new trading platform and needing their rules rebuilt properly</p>
+<p>* Operators wanting to offer several challenge types, sizes and pricing tiers</p>
+<h2>Who It&#x27;s For</h2>
+<h3>Challenge and Evaluation Setup</h3>
+<p>Single-phase, two-phase, instant funding or custom models. You define account sizes, profit targets, minimum trading days, time limits, leverage and pricing for each, and the system handles the rest.</p>
+<h3>Checkout and Account Creation</h3>
+<p>Traders choose a challenge on your website, pay through your integrated payment provider and receive their trading account automatically. No one on your team has to create logins manually.</p>
+<h3>Trader Accounts and Progression</h3>
+<p>Each trader&#x27;s journey is tracked from purchase through each phase to funded status. Passing a phase can trigger the next account automatically or send it for review first, whichever your process requires.</p>
+<h3>Rule Configuration</h3>
+<p>Daily loss limits, maximum drawdown (static or trailing), profit targets, consistency rules, minimum days, news trading restrictions, weekend holding, lot size caps and more. Rules can differ between challenge types and phases.</p>
+<h3>Real-Time Rule Monitoring</h3>
+<p>The system checks trading activity against each account&#x27;s rules as it happens. When a breach occurs, the account can be disabled automatically and the trader notified with the reason, so there&#x27;s no argument about what happened or when.</p>
+<h3>Risk Monitoring</h3>
+<p>Dashboards flag patterns worth a closer look, such as identical trades across linked accounts, suspected copy trading, hedging between accounts, latency arbitrage behaviour or unusual concentration in a single instrument.</p>
+<h3>Performance Dashboards</h3>
+<p>Traders see their progress against targets and limits in a clear dashboard, which cuts down support questions. Your team sees firm-wide views of active challenges, pass rates, breach reasons and revenue.</p>
+<h3>Payout Review Workflow</h3>
+<p>Payout requests from funded traders arrive in a review queue with trading history, rule compliance and risk flags attached. Your team approves or queries each request, and approved payouts go out through your payment provider with a full record kept.</p>
+<h3>CRM and Admin Panel</h3>
+<p>Trader profiles, KYC status, purchase history, account history, support notes and communication logs in one place, with role-based access for support, risk and finance staff.</p>
+<h3>API Access</h3>
+<p>A documented API lets your website, affiliate system, payment providers, KYC service and trading platform exchange data with the CRM. Useful if you want a custom front end or need to plug in tools you already use.</p>
+<h2>What&#x27;s Included</h2>
+<h3>01 Consultation</h3>
+<p>We learn your business model, challenge structure, rule set, target markets, trading platform and the providers you plan to use.</p>
+<h3>02 Solution Design</h3>
+<p>Challenge types, rules, progression logic, risk flags, payout policy and integrations are mapped out in detail. You approve every rule before it&#x27;s built, because a misconfigured rule is a support headache waiting to happen.</p>
+<h3>03 Integration</h3>
+<p>The CRM is connected to your trading platform, website checkout, payment and KYC providers. We test every challenge type with simulated trading, deliberately triggering each rule to confirm breaches, passes and progressions behave exactly as intended.</p>
+<h3>04 Launch &amp; Support</h3>
+<p>We go live, monitor the first wave of traders closely and stay on hand for rule changes, new challenge types, scaling and technical support.</p>
+<h2>How We Get You Running</h2>
+<p>Trader → Your Website &amp; Checkout → Payment Provider → Prop Firm CRM → Automatic Account Creation on Trading Platform</p>
+<p>Trading Platform → Live Trading Data → Rule Engine &amp; Risk Monitoring → Breach / Pass / Progression Actions</p>
+<p>Funded Trader → Payout Request → Review Queue → Payment Provider → Record in CRM</p>
+<p>A trader buys a challenge on your site, pays and gets an account straight away. As they trade, data streams back to the rule engine, which enforces limits and moves accounts between phases. Funded traders request payouts, your team reviews them, and approved payments go out with everything logged.</p>
+<h2>How Everything Connects</h2>
+<h3>Consistent Rule Enforcement</h3>
+<p>Every trader is measured the same way, every time, with timestamps to back it up.</p>
+<h3>Faster Progression</h3>
+<p>Traders who pass move forward quickly, which keeps them happy and talking positively about your firm.</p>
+<h3>Earlier Warning on Abuse</h3>
+<p>Risk flags surface suspicious behaviour before it turns into a costly payout.</p>
+<h3>A Smaller Support Load</h3>
+<p>Clear dashboards and automatic notifications answer most of the questions traders would otherwise email about.</p>
+<h3>Ready to Scale</h3>
+<p>Whether you run five hundred accounts or fifty thousand, the same automation handles the volume without hiring an army.</p>
+<h2>Benefits for Your Firm</h2>
+<h3>What We Handle</h3>
+<p>CRM and rule engine configuration, platform, payment and KYC integrations, API setup, testing, launch support and ongoing technical maintenance.</p>
+<h3>What Stays With You</h3>
+<p>Your business model, challenge terms, rule definitions, pricing, payout decisions, trader agreements, marketing claims, and compliance with consumer protection, financial and tax rules in every market you serve. Some regulators have started looking more closely at prop trading, so legal advice in your target jurisdictions is strongly recommended.</p>
+<h3>Platform and Third-Party Providers</h3>
+<p>Trading platform licensing terms for prop firm use vary between providers and have changed in recent years, so confirm your arrangement directly with your platform provider. Payment, verification and platform providers each work under their own terms. We&#x27;re not affiliated with or endorsed by any platform developer unless clearly stated.</p>
+<h2>Who Handles What</h2>
+<h3>What is a prop firm CRM?</h3>
+<p>It&#x27;s software built around the prop trading cycle. Challenge sales, account creation, rule enforcement, phase progression, risk monitoring and payout review, all in one system linked to your trading platform.</p>
+<h3>Can we create our own challenge rules?</h3>
+<p>Yes. Targets, drawdowns, daily limits, minimum days, time limits, consistency rules and trading restrictions are all configurable per challenge type and phase.</p>
+<h3>Is rule monitoring real time?</h3>
+<p>Trading data is checked continuously, so breaches can be detected and acted on as they happen rather than at the end of the day.</p>
+<h3>Can the system detect copy trading or account abuse?</h3>
+<p>It can flag patterns that suggest copy trading, cross-account hedging or other prohibited behaviour. Final decisions stay with your risk team.</p>
+<h3>Are payouts sent automatically?</h3>
+<p>They can be, but most firms prefer a review step. Requests come with trading history and risk flags attached so your team can decide quickly.</p>
+<h3>Which trading platforms does it connect to?</h3>
+<p>We review your chosen platform during design and confirm integration options. Platform availability for prop firms depends on each provider&#x27;s current licensing terms.</p>
+<h3>Do you offer a prop firm API?</h3>
+<p>Yes. A documented API allows your website, affiliate tools and other systems to exchange data with the CRM, which helps if you want a custom front end or integrations of your own.</p>
+<h3>Can we start with one challenge type and add more later?</h3>
+<p>Absolutely. Many firms launch with a single programme, then add sizes, phases or instant funding options as they grow. Our prop firm CRM is built to expand with you.</p>
+<h2>Frequently Asked Questions</h2>
+<p>Tell us about your challenge model, rules and the platform you&#x27;re planning to use. We&#x27;ll show you how evaluation, monitoring and payouts would work in practice, and what it takes to get your programme live.</p>
+      
+    </div>
+  </div>
+</section>
+
+<footer class="wp-block-group alignfull bs-site-footer">
+<div class="wp-block-group bs-footer-inner">
+<div class="wp-block-group bs-footer-grid">
+<div class="wp-block-group bs-footer-brand">
+<h3 class="bs-footer-logo">BrokerSetup<span class="bs-brand-dot">.</span></h3>
+<p class="bs-footer-desc">Forex brokerage technology, MT5 solutions, hosting, liquidity connectivity and CRM integrations for brokers and prop firms.</p>
+</div>
+<div class="wp-block-group bs-footer-links">
+<h3 class="bs-footer-heading">Solutions</h3>
+<p><a href="brokerage-setup.html">Brokerage Setup</a></p>
+<p><a href="mt5-white-label.html">MT5 White Label</a></p>
+<p><a href="hosting.html">Trading Server Hosting</a></p>
+<p><a href="liquidity.html">Liquidity &amp; Connectivity</a></p>
+<p><a href="crm.html">Forex CRM</a></p>
+<p><a href="kyc-aml.html">KYC &amp; AML</a></p>
+<p><a href="payments.html">Payment Gateway</a></p>
+<p><a href="prop-firm.html">Prop Firm Technology</a></p>
+</div>
+<div class="wp-block-group bs-footer-contact">
+<h3 class="bs-footer-heading">Company</h3>
+<p><a href="about.html">About Us</a></p>
+<p><a href="how-it-works.html">How It Works</a></p>
+<p><a href="faq.html">FAQ</a></p>
+<p><a href="contact.html">Contact</a></p>
+<p><a href="mailto:business@brokersetup.com">business@brokersetup.com</a></p>
+</div>
+</div>
+<p class="bs-footer-bottom">© 2026 BrokerSetup. All rights reserved. · We provide technology and infrastructure services. We are not a broker and do not hold client funds. Regulatory requirements remain the responsibility of each business.</p>
+</div>
+</footer>
+</div>
+<script>
+(function(){
+  var t = document.querySelector('.bs-nav-toggle');
+  var m = document.querySelector('.bs-nav-submenu');
+  if (!t || !m) return;
+  t.addEventListener('click', function() {
+    m.hidden = !m.hidden;
+    t.setAttribute('aria-expanded', String(!m.hidden));
+  });
+  m.querySelectorAll('a').forEach(function(a) {
+    a.addEventListener('click', function() {
+      m.hidden = true;
+      t.setAttribute('aria-expanded', 'false');
+    });
+  });
+})();
+</script>
+</body>
+</html>
