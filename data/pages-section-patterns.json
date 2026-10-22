@@ -1,0 +1,325 @@
+{
+  "project": "ForexTrade Technology – 14 Pages Section-by-Section Design Patterns",
+  "version": "1.0",
+  "description": "Complete section structure for every page using the real content from the Google Docs. Design patterns only – no full page generation.",
+
+  "global_elements": {
+    "topbar": "Sticky header with logo + 6 theme buttons + optional main nav links",
+    "footer": "3-column footer + risk disclosure + copyright"
+  },
+
+  "pages": [
+    {
+      "id": 1,
+      "name": "Homepage",
+      "url": "/",
+      "seo_title": "Forex Brokerage Technology & MT5 Solutions for Brokers",
+      "sections": [
+        {
+          "order": 1,
+          "name": "Hero",
+          "elements": ["Badge", "H1", "Lead paragraph", "Sub paragraph", "Primary CTA", "Secondary CTA", "Trust Strip"],
+          "pattern": "Full-width hero with dual CTAs and thin trust bar underneath"
+        },
+        {
+          "order": 2,
+          "name": "Solutions Grid",
+          "elements": ["Section label", "H2", "Intro text", "6 cards (Brokerage Setup, MT5 White Label, Hosting, Liquidity, CRM, Prop Firm)"],
+          "pattern": "3-column card grid (responsive), numbered cards, short description + Explore link"
+        },
+        {
+          "order": 3,
+          "name": "Process / How Launch Works",
+          "elements": ["Section label", "H2", "Intro", "6 numbered steps (Discovery → Managed Support)"],
+          "pattern": "Numbered process steps (grid or timeline)"
+        },
+        {
+          "order": 4,
+          "name": "Platform & Infrastructure",
+          "elements": ["Section label", "H2", "Intro", "5 feature blocks"],
+          "pattern": "Stacked feature list with left accent border or icon"
+        },
+        {
+          "order": 5,
+          "name": "How Your Trading Stack Connects",
+          "elements": ["H2", "Explanatory paragraph", "Visual flow"],
+          "pattern": "Simple horizontal/vertical chain diagram"
+        },
+        {
+          "order": 6,
+          "name": "Why Brokers Work With Us",
+          "elements": ["Section label", "H2", "5 benefit blocks"],
+          "pattern": "2–3 column benefit cards"
+        },
+        {
+          "order": 7,
+          "name": "Who We Work With",
+          "elements": ["Section label", "H2", "4 audience cards"],
+          "pattern": "4 equal cards"
+        },
+        {
+          "order": 8,
+          "name": "FAQ",
+          "elements": ["Section label", "H2", "7–8 accordion items"],
+          "pattern": "Expandable FAQ accordion"
+        },
+        {
+          "order": 9,
+          "name": "Final CTA",
+          "elements": ["H2", "Short text", "Primary button"],
+          "pattern": "Full-width coloured CTA band"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Brokerage Setup",
+      "url": "/solutions/brokerage-setup/",
+      "seo_title": "Forex Brokerage Setup & Launch Technology",
+      "sections": [
+        { "order": 1, "name": "Hero", "elements": ["H1", "Intro", "CTA"], "pattern": "Standard service hero" },
+        { "order": 2, "name": "Who This Is For", "elements": ["H2", "Paragraph"], "pattern": "Simple text block" },
+        { "order": 3, "name": "What Goes Into a Technology-Led Launch", "elements": ["H2", "6 sub-items"], "pattern": "Checklist or icon list" },
+        { "order": 4, "name": "How the Setup Process Works", "elements": ["H2", "6 numbered stages"], "pattern": "Vertical numbered process" },
+        { "order": 5, "name": "How It All Fits Together", "elements": ["H2", "Stack explanation"], "pattern": "Diagram / flow" },
+        { "order": 6, "name": "Key Capabilities", "elements": ["H2", "Bullet list"], "pattern": "Feature chips or bullets" },
+        { "order": 7, "name": "Typical Launch Scenarios", "elements": ["H2", "3 scenarios"], "pattern": "3 cards" },
+        { "order": 8, "name": "Who Handles What", "elements": ["H2", "3 columns (Us / You / Third Parties)"], "pattern": "3-column responsibility table" },
+        { "order": 9, "name": "FAQ", "elements": ["Accordion"], "pattern": "Standard FAQ" },
+        { "order": 10, "name": "Related Services + Final CTA", "elements": ["Links", "Button"], "pattern": "Bottom CTA band" }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "MT5 White Label",
+      "url": "/solutions/mt5-white-label/",
+      "seo_title": "MT5 White Label Solutions for Forex Brokers",
+      "sections": [
+        { "order": 1, "name": "Hero", "elements": ["H1", "Intro", "CTA"], "pattern": "Service hero" },
+        { "order": 2, "name": "What an MT5 White Label Actually Means", "elements": ["H2", "Explanatory text"], "pattern": "Long-form definition text" },
+        { "order": 3, "name": "Who It Suits", "elements": ["H2", "Bullet list"], "pattern": "Simple list or tags" },
+        { "order": 4, "name": "What's Included", "elements": ["H2", "8 items"], "pattern": "Grid or checklist" },
+        { "order": 5, "name": "How the Deployment Works", "elements": ["H2", "6 numbered stages"], "pattern": "Process steps" },
+        { "order": 6, "name": "Where the White Label Sits in Your Stack", "elements": ["H2", "Explanation"], "pattern": "Diagram" },
+        { "order": 7, "name": "Key Capabilities", "elements": ["Bullets"], "pattern": "Feature list" },
+        { "order": 8, "name": "Use Cases", "elements": ["H2", "3 scenarios"], "pattern": "3 cards" },
+        { "order": 9, "name": "Licensing and Responsibilities", "elements": ["H2", "3 columns"], "pattern": "Responsibility split" },
+        { "order": 10, "name": "FAQ", "elements": ["Accordion"], "pattern": "FAQ" },
+        { "order": 11, "name": "Related Services + Final CTA", "elements": ["Links", "Button"], "pattern": "CTA band" }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Forex Broker Hosting",
+      "url": "/solutions/forex-broker-hosting/",
+      "seo_title": "Forex Broker Hosting | MT4 & MT5 Server Hosting",
+      "sections": [
+        { "order": 1, "name": "Hero", "elements": ["H1", "Intro"], "pattern": "Service hero" },
+        { "order": 2, "name": "Why Reliable Hosting Matters", "elements": ["H2", "Text"], "pattern": "Text block" },
+        { "order": 3, "name": "Who This Service Is For", "elements": ["H2", "Text"], "pattern": "Text block" },
+        { "order": 4, "name": "MT4 Hosting + MT5 Hosting", "elements": ["Two side-by-side blocks"], "pattern": "2-column comparison" },
+        { "order": 5, "name": "What's Included", "elements": ["H2", "8 items"], "pattern": "Icon grid or checklist" },
+        { "order": 6, "name": "A Note on Forex VPS", "elements": ["H2", "Short note"], "pattern": "Callout box" },
+        { "order": 7, "name": "How We Set It Up", "elements": ["4 stages"], "pattern": "Process" },
+        { "order": 8, "name": "How a Typical Hosting Environment Is Laid Out", "elements": ["Diagram"], "pattern": "Visual layout" },
+        { "order": 9, "name": "Benefits", "elements": ["4 benefit cards"], "pattern": "Cards" },
+        { "order": 10, "name": "Who Handles What", "elements": ["3 columns"], "pattern": "Responsibility" },
+        { "order": 11, "name": "FAQ", "elements": ["Accordion"], "pattern": "FAQ" },
+        { "order": 12, "name": "Final CTA", "elements": ["Button"], "pattern": "CTA" }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Liquidity & Connectivity",
+      "url": "/solutions/forex-liquidity-connectivity/",
+      "seo_title": "Forex Liquidity & Connectivity | MT4 MT5 Liquidity Solutions",
+      "sections": [
+        { "order": 1, "name": "Hero", "elements": ["H1", "Intro"], "pattern": "Service hero" },
+        { "order": 2, "name": "What Is Forex Liquidity?", "elements": ["H2", "Explanation"], "pattern": "Text" },
+        { "order": 3, "name": "Who Comes to Us", "elements": ["H2", "Text"], "pattern": "Text" },
+        { "order": 4, "name": "How Connectivity Works", "elements": ["H2", "Explanation + diagram"], "pattern": "Text + simple diagram" },
+        { "order": 5, "name": "What We Deliver", "elements": ["H2", "9 items"], "pattern": "Feature grid" },
+        { "order": 6, "name": "How We Run a Project", "elements": ["4 stages"], "pattern": "Process" },
+        { "order": 7, "name": "The Connectivity Chain", "elements": ["Visual flow"], "pattern": "Diagram" },
+        { "order": 8, "name": "Why It Pays to Get This Right", "elements": ["4 benefits"], "pattern": "Cards" },
+        { "order": 9, "name": "Who Is Responsible", "elements": ["3 columns"], "pattern": "Responsibility" },
+        { "order": 10, "name": "FAQ", "elements": ["Accordion"], "pattern": "FAQ" },
+        { "order": 11, "name": "Final CTA", "elements": ["Button"], "pattern": "CTA" }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Forex CRM",
+      "url": "/products/forex-crm/",
+      "seo_title": "Forex CRM Software | CRM for Forex Brokers",
+      "sections": [
+        { "order": 1, "name": "Hero", "elements": ["H1", "Intro"], "pattern": "Product hero" },
+        { "order": 2, "name": "What Is a Forex CRM?", "elements": ["H2", "Definition"], "pattern": "Text" },
+        { "order": 3, "name": "Who Uses It", "elements": ["H2", "Text"], "pattern": "Text" },
+        { "order": 4, "name": "Features by Stage", "elements": ["H2", "4 stages + Role-Based Access"], "pattern": "Horizontal stages or tabs" },
+        { "order": 5, "name": "MT5 / Payment / KYC Integration", "elements": ["H2", "4 integration blocks"], "pattern": "Feature cards" },
+        { "order": 6, "name": "How the CRM Sits in the Stack", "elements": ["Diagram"], "pattern": "Flow" },
+        { "order": 7, "name": "How We Roll It Out", "elements": ["4 stages"], "pattern": "Process" },
+        { "order": 8, "name": "What Changes for Your Team", "elements": ["5 benefits"], "pattern": "Cards" },
+        { "order": 9, "name": "Who Handles What", "elements": ["3 columns"], "pattern": "Responsibility" },
+        { "order": 10, "name": "FAQ", "elements": ["Accordion"], "pattern": "FAQ" },
+        { "order": 11, "name": "Final CTA", "elements": ["Button"], "pattern": "CTA" }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "KYC & AML Integration",
+      "url": "/technology/kyc-aml-integration/",
+      "seo_title": "KYC & AML Integration for Forex Brokers | Client Verification Technology",
+      "sections": [
+        { "order": 1, "name": "Hero", "elements": ["H1", "Intro"], "pattern": "Service hero" },
+        { "order": 2, "name": "Why Brokers Need This Done Properly", "elements": ["H2", "Text"], "pattern": "Text" },
+        { "order": 3, "name": "Who This Helps", "elements": ["H2", "Text"], "pattern": "Text" },
+        { "order": 4, "name": "What We Build", "elements": ["H2", "8 items"], "pattern": "Feature list / grid" },
+        { "order": 5, "name": "How We Approach a Project", "elements": ["4 stages"], "pattern": "Process" },
+        { "order": 6, "name": "Where Verification Fits in Client Journey", "elements": ["Visual flow"], "pattern": "Diagram" },
+        { "order": 7, "name": "Benefits", "elements": ["5 benefits"], "pattern": "Cards" },
+        { "order": 8, "name": "Where Responsibility Sits", "elements": ["3 columns"], "pattern": "Responsibility" },
+        { "order": 9, "name": "FAQ", "elements": ["Accordion"], "pattern": "FAQ" },
+        { "order": 10, "name": "Final CTA", "elements": ["Button"], "pattern": "CTA" }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Payment Gateway Integration",
+      "url": "/products/payment-gateway-integration/",
+      "seo_title": "Forex Payment Gateway Integration | Deposits & Withdrawals for Brokers",
+      "sections": [
+        { "order": 1, "name": "Hero", "elements": ["H1", "Intro"], "pattern": "Product hero" },
+        { "order": 2, "name": "Why Payments Are Harder for Brokers", "elements": ["H2", "Text"], "pattern": "Text" },
+        { "order": 3, "name": "Who This Is For", "elements": ["H2", "Text"], "pattern": "Text" },
+        { "order": 4, "name": "What's Included", "elements": ["H2", "8 items"], "pattern": "Feature grid" },
+        { "order": 5, "name": "How a Project Runs", "elements": ["4 stages"], "pattern": "Process" },
+        { "order": 6, "name": "How the Payment Flow Connects", "elements": ["Diagram"], "pattern": "Flow" },
+        { "order": 7, "name": "Benefits", "elements": ["5 benefits"], "pattern": "Cards" },
+        { "order": 8, "name": "Who Handles What", "elements": ["3 columns"], "pattern": "Responsibility" },
+        { "order": 9, "name": "FAQ", "elements": ["Accordion"], "pattern": "FAQ" },
+        { "order": 10, "name": "Final CTA", "elements": ["Button"], "pattern": "CTA" }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Prop Firm CRM & API",
+      "url": "/products/prop-firm-crm-api/",
+      "seo_title": "Prop Firm CRM & API | Prop Trading Management Software",
+      "sections": [
+        { "order": 1, "name": "Hero", "elements": ["H1", "Intro"], "pattern": "Product hero" },
+        { "order": 2, "name": "What's Included", "elements": ["H2", "10 items"], "pattern": "Feature grid" },
+        { "order": 3, "name": "How We Get You Running", "elements": ["4 stages"], "pattern": "Process" },
+        { "order": 4, "name": "How Everything Connects", "elements": ["Diagram"], "pattern": "Flow" },
+        { "order": 5, "name": "Benefits for Your Firm", "elements": ["5 benefits"], "pattern": "Cards" },
+        { "order": 6, "name": "Who Handles What", "elements": ["3 columns"], "pattern": "Responsibility" },
+        { "order": 7, "name": "FAQ", "elements": ["Accordion"], "pattern": "FAQ" },
+        { "order": 8, "name": "Final CTA", "elements": ["Button"], "pattern": "CTA" }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "How It Works",
+      "url": "/how-it-works/",
+      "seo_title": "How Forex Brokerage Technology Setup Works | Step-by-Step Process",
+      "sections": [
+        { "order": 1, "name": "Hero", "elements": ["H1", "Intro"], "pattern": "Process hero" },
+        { "order": 2, "name": "The Four Stages at a Glance", "elements": ["Overview of 4 stages"], "pattern": "Horizontal stage bar" },
+        { "order": 3, "name": "Stage 01: Consultation", "elements": ["What We Cover", "What You Get"], "pattern": "Two-column" },
+        { "order": 4, "name": "Stage 02: Solution Design", "elements": ["Architecture", "Workflow Mapping", "Project Plan", "What You Get"], "pattern": "Two-column" },
+        { "order": 5, "name": "Stage 03: Integration", "elements": ["Infrastructure", "Connectivity", "Operational Systems", "Third-Party", "Testing", "What You Get"], "pattern": "Detailed stage" },
+        { "order": 6, "name": "Stage 04: Launch & Support", "elements": ["Go-Live", "Early Stabilisation", "Ongoing Support", "What You Get"], "pattern": "Detailed stage" },
+        { "order": 7, "name": "What We'll Need From You", "elements": ["List"], "pattern": "Checklist" },
+        { "order": 8, "name": "What Usually Causes Delays", "elements": ["4 common issues"], "pattern": "Warning cards" },
+        { "order": 9, "name": "Who Handles What", "elements": ["3 columns"], "pattern": "Responsibility" },
+        { "order": 10, "name": "FAQ", "elements": ["Accordion"], "pattern": "FAQ" },
+        { "order": 11, "name": "Final CTA", "elements": ["Button"], "pattern": "CTA" }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "About Us",
+      "url": "/about-us/",
+      "seo_title": "About Us | Forex Brokerage Technology Partner",
+      "sections": [
+        { "order": 1, "name": "Hero", "elements": ["H1", "Short statement"], "pattern": "About hero" },
+        { "order": 2, "name": "Who We Are", "elements": ["H2", "Text"], "pattern": "Text" },
+        { "order": 3, "name": "Our Expertise", "elements": ["H2", "Text"], "pattern": "Text" },
+        { "order": 4, "name": "How We Think About Technology", "elements": ["H2", "4 principles"], "pattern": "4 principle cards" },
+        { "order": 5, "name": "What We Deliver", "elements": ["Solutions", "Products", "Technology"], "pattern": "3 columns" },
+        { "order": 6, "name": "How We Work", "elements": ["H2", "Text"], "pattern": "Text" },
+        { "order": 7, "name": "Support That Doesn't Disappear", "elements": ["H2", "Text"], "pattern": "Text" },
+        { "order": 8, "name": "Who We Serve", "elements": ["H2", "List/cards"], "pattern": "Cards" },
+        { "order": 9, "name": "Why Brokers Work With Us", "elements": ["4 reasons"], "pattern": "Cards" },
+        { "order": 10, "name": "A Note on What We Are", "elements": ["Disclaimer"], "pattern": "Callout" },
+        { "order": 11, "name": "Final CTA", "elements": ["Button"], "pattern": "CTA" }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "FAQ",
+      "url": "/faq/",
+      "seo_title": "Forex Broker Technology FAQ | MT5, Hosting & Liquidity Questions",
+      "sections": [
+        { "order": 1, "name": "Hero", "elements": ["H1"], "pattern": "Simple page hero" },
+        { "order": 2, "name": "General Questions", "elements": ["Accordion group"], "pattern": "FAQ group" },
+        { "order": 3, "name": "MT5 and MT4", "elements": ["Accordion group"], "pattern": "FAQ group" },
+        { "order": 4, "name": "White Label Questions", "elements": ["Accordion group"], "pattern": "FAQ group" },
+        { "order": 5, "name": "Grey Label Questions", "elements": ["Accordion group"], "pattern": "FAQ group" },
+        { "order": 6, "name": "CRM Questions", "elements": ["Accordion group"], "pattern": "FAQ group" },
+        { "order": 7, "name": "Liquidity and Connectivity", "elements": ["Accordion group"], "pattern": "FAQ group" },
+        { "order": 8, "name": "Hosting and Infrastructure", "elements": ["Accordion group"], "pattern": "FAQ group" },
+        { "order": 9, "name": "Payments and Verification", "elements": ["Accordion group"], "pattern": "FAQ group" },
+        { "order": 10, "name": "Prop Firms, Apps and APIs", "elements": ["Accordion group"], "pattern": "FAQ group" },
+        { "order": 11, "name": "Process, Timelines and Support", "elements": ["Accordion group"], "pattern": "FAQ group" },
+        { "order": 12, "name": "Final CTA", "elements": ["Talk to Our Team"], "pattern": "CTA band" }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Contact",
+      "url": "/contact/",
+      "seo_title": "Contact Us | Forex Brokerage Technology Consultation",
+      "sections": [
+        { "order": 1, "name": "Hero", "elements": ["H1"], "pattern": "Contact hero" },
+        { "order": 2, "name": "Request a Consultation", "elements": ["Contact form (Name, Email, Company, Stage, Message)"], "pattern": "Form + short intro" },
+        { "order": 3, "name": "What Happens After You Send Your Request", "elements": ["4 numbered steps"], "pattern": "Process steps" },
+        { "order": 4, "name": "Who Should Get in Touch", "elements": ["Bullet list"], "pattern": "List" },
+        { "order": 5, "name": "Before You Reach Out", "elements": ["Guidance text"], "pattern": "Callout" },
+        { "order": 6, "name": "A Quick Note on What We Do", "elements": ["Disclaimer"], "pattern": "Callout" },
+        { "order": 7, "name": "Prefer to Read First?", "elements": ["Links to FAQ / How It Works"], "pattern": "Links" }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Extra / Related Product Page (Template)",
+      "url": "/products/[slug]/",
+      "seo_title": "Depends on product",
+      "note": "Use this pattern for any additional product page (e.g. White Label Trading App)",
+      "sections": [
+        { "order": 1, "name": "Hero", "elements": ["H1", "Intro", "CTA"], "pattern": "Product hero" },
+        { "order": 2, "name": "Definition / What It Is", "elements": ["H2", "Text"], "pattern": "Text" },
+        { "order": 3, "name": "Who It’s For", "elements": ["H2", "Text or list"], "pattern": "Text / list" },
+        { "order": 4, "name": "What's Included", "elements": ["H2", "Feature list"], "pattern": "Feature grid" },
+        { "order": 5, "name": "How It Works / Process", "elements": ["Numbered stages"], "pattern": "Process" },
+        { "order": 6, "name": "Diagram / How It Connects", "elements": ["Visual"], "pattern": "Flow diagram" },
+        { "order": 7, "name": "Benefits", "elements": ["Cards"], "pattern": "Benefit cards" },
+        { "order": 8, "name": "Who Handles What", "elements": ["3 columns"], "pattern": "Responsibility" },
+        { "order": 9, "name": "FAQ", "elements": ["Accordion"], "pattern": "FAQ" },
+        { "order": 10, "name": "Final CTA", "elements": ["Button"], "pattern": "CTA band" }
+      ]
+    }
+  ],
+
+  "reusable_patterns": {
+    "service_hero": "Badge + H1 + 1–2 paragraphs + 1–2 CTAs",
+    "feature_grid": "3-column cards or checklist",
+    "numbered_process": "Vertical or horizontal numbered steps",
+    "three_column_responsibility": "Us / You / Third Parties",
+    "benefit_cards": "3–5 equal cards",
+    "accordion_faq": "Expandable list",
+    "final_cta_band": "Full-width coloured section with button",
+    "diagram_flow": "Simple horizontal or vertical flow"
+  }
+}

@@ -1,0 +1,402 @@
+{
+  "project": "ForexTrade Technology – Multi-Theme Website",
+  "version": "1.0",
+  "description": "Global design system tokens, layout rules and component specifications that apply across all 6 themes and all 14 pages.",
+
+  "style": {
+    "overall_approach": "Modern fintech / B2B SaaS",
+    "visual_language": "Clean, professional, trust-focused, modular",
+    "border_radius": {
+      "sm": "6px",
+      "md": "10px",
+      "lg": "12px",
+      "xl": "16px",
+      "full": "9999px"
+    },
+    "shadows": {
+      "card": "0 4px 20px rgba(0,0,0,0.06)",
+      "card_hover": "0 12px 32px rgba(0,0,0,0.1)",
+      "topbar": "0 1px 0 rgba(0,0,0,0.05)"
+    },
+    "transitions": {
+      "default": "0.25s ease",
+      "theme_switch": "0.3s ease",
+      "hover": "0.2s ease"
+    },
+    "breakpoints": {
+      "sm": "640px",
+      "md": "768px",
+      "lg": "1024px",
+      "xl": "1280px",
+      "2xl": "1400px"
+    }
+  },
+
+  "tailwind": {
+    "recommended": true,
+    "version": "3.4+",
+    "cdn": "https://cdn.tailwindcss.com",
+    "config_notes": "Use Tailwind for utility classes. Theme-specific colors should be defined via CSS custom properties (CSS variables) so themes can be switched by changing body class.",
+    "useful_utilities": [
+      "container mx-auto px-6",
+      "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6",
+      "flex items-center justify-between",
+      "sticky top-0 z-50",
+      "rounded-xl",
+      "transition-all duration-300",
+      "shadow-sm hover:shadow-lg"
+    ],
+    "custom_config_suggestion": {
+      "theme.extend.colors": "Map to CSS variables (e.g. primary: 'var(--accent)')",
+      "theme.extend.fontFamily": "sans: ['Inter', 'system-ui', 'sans-serif']",
+      "theme.extend.borderRadius": "Use the radius tokens above"
+    }
+  },
+
+  "fonts": {
+    "primary": {
+      "family": "Inter",
+      "weights": [300, 400, 500, 600, 700, 800],
+      "fallback": "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
+      "google_fonts_url": "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    },
+    "theme_specific": {
+      "current": "Inter",
+      "matchtrade": "Outfit",
+      "b2broker": "Space Grotesk",
+      "leverate": "Poppins",
+      "softfx": "Roboto",
+      "uptrader": "Inter"
+    },
+    "scale": {
+      "xs": "0.75rem",
+      "sm": "0.875rem",
+      "base": "1rem",
+      "lg": "1.125rem",
+      "xl": "1.25rem",
+      "2xl": "1.5rem",
+      "3xl": "1.875rem",
+      "4xl": "2.25rem",
+      "5xl": "3rem"
+    },
+    "line_height": {
+      "tight": "1.25",
+      "snug": "1.375",
+      "normal": "1.5",
+      "relaxed": "1.625"
+    }
+  },
+
+  "colors": {
+    "themes": {
+      "current": {
+        "name": "Current (forextrade.pincodeit.com)",
+        "bg": "#ffffff",
+        "section_alt": "#f7f9fc",
+        "text": "#1a2332",
+        "text_muted": "#5a6a7e",
+        "heading": "#0f172a",
+        "accent": "#2563eb",
+        "accent_soft": "#eff6ff",
+        "border": "#e2e8f0",
+        "card_bg": "#ffffff",
+        "topbar_bg": "rgba(255,255,255,0.92)",
+        "cta_bg": "#1e3a8a",
+        "cta_text": "#ffffff",
+        "footer_bg": "#0f172a",
+        "footer_text": "#e2e8f0"
+      },
+      "matchtrade": {
+        "name": "Match-Trade",
+        "bg": "#0b0e17",
+        "section_alt": "#111622",
+        "text": "#d1d5db",
+        "text_muted": "#9ca3af",
+        "heading": "#ffffff",
+        "accent": "#7c3aed",
+        "accent_soft": "rgba(124,58,237,0.15)",
+        "border": "#1f2937",
+        "card_bg": "#151a27",
+        "topbar_bg": "rgba(11,14,23,0.95)",
+        "cta_bg": "linear-gradient(135deg,#7c3aed,#4f46e5)",
+        "cta_text": "#ffffff",
+        "footer_bg": "#06080f",
+        "footer_text": "#d1d5db"
+      },
+      "b2broker": {
+        "name": "B2Broker",
+        "bg": "#0a1628",
+        "section_alt": "#0d1b2e",
+        "text": "#c5d0de",
+        "text_muted": "#8b9cb3",
+        "heading": "#ffffff",
+        "accent": "#f59e0b",
+        "accent_soft": "rgba(245,158,11,0.12)",
+        "border": "#1e3a5f",
+        "card_bg": "#12233a",
+        "topbar_bg": "rgba(10,22,40,0.95)",
+        "cta_bg": "#f59e0b",
+        "cta_text": "#0a1628",
+        "footer_bg": "#060e1a",
+        "footer_text": "#c5d0de"
+      },
+      "leverate": {
+        "name": "Leverate",
+        "bg": "#f8fafc",
+        "section_alt": "#ffffff",
+        "text": "#334155",
+        "text_muted": "#64748b",
+        "heading": "#0f172a",
+        "accent": "#0ea5e9",
+        "accent_soft": "#e0f2fe",
+        "border": "#e2e8f0",
+        "card_bg": "#ffffff",
+        "topbar_bg": "rgba(255,255,255,0.95)",
+        "cta_bg": "#0c4a6e",
+        "cta_text": "#ffffff",
+        "footer_bg": "#0f172a",
+        "footer_text": "#e2e8f0"
+      },
+      "softfx": {
+        "name": "Soft-FX",
+        "bg": "#f4f6f8",
+        "section_alt": "#ffffff",
+        "text": "#2d3748",
+        "text_muted": "#718096",
+        "heading": "#1a202c",
+        "accent": "#0d9488",
+        "accent_soft": "#ccfbf1",
+        "border": "#e2e8f0",
+        "card_bg": "#ffffff",
+        "topbar_bg": "rgba(255,255,255,0.96)",
+        "cta_bg": "#134e4a",
+        "cta_text": "#ffffff",
+        "footer_bg": "#1a202c",
+        "footer_text": "#e2e8f0"
+      },
+      "uptrader": {
+        "name": "UpTrader",
+        "bg": "#ffffff",
+        "section_alt": "#f0f7ff",
+        "text": "#1e293b",
+        "text_muted": "#64748b",
+        "heading": "#0f172a",
+        "accent": "#3b82f6",
+        "accent_soft": "#dbeafe",
+        "border": "#e0e7ff",
+        "card_bg": "#ffffff",
+        "topbar_bg": "rgba(255,255,255,0.97)",
+        "cta_bg": "linear-gradient(135deg,#2563eb,#3b82f6)",
+        "cta_text": "#ffffff",
+        "footer_bg": "#1e3a8a",
+        "footer_text": "#e0e7ff"
+      }
+    },
+    "semantic": {
+      "success": "#10b981",
+      "warning": "#f59e0b",
+      "error": "#ef4444",
+      "info": "#3b82f6"
+    }
+  },
+
+  "spacing": {
+    "margin": {
+      "section_vertical": "80px",
+      "section_vertical_mobile": "56px",
+      "container_horizontal": "24px",
+      "card_gap": "24px",
+      "element_gap_sm": "8px",
+      "element_gap_md": "16px",
+      "element_gap_lg": "32px"
+    },
+    "padding": {
+      "section": "80px 0",
+      "section_mobile": "56px 0",
+      "container": "0 24px",
+      "card": "28px",
+      "card_sm": "20px",
+      "button": "12px 24px",
+      "button_lg": "16px 32px",
+      "topbar": "12px 20px",
+      "input": "12px 16px"
+    }
+  },
+
+  "dimensions": {
+    "height": {
+      "topbar": "64px",
+      "button": "44px",
+      "button_lg": "52px",
+      "input": "48px",
+      "logo_mark": "36px",
+      "step_number": "40px",
+      "hero_min": "420px"
+    },
+    "width": {
+      "container_max": "1200px",
+      "container_wide": "1400px",
+      "content_max": "720px",
+      "content_narrow": "600px",
+      "card_min": "280px",
+      "logo_mark": "36px"
+    }
+  },
+
+  "navigation": {
+    "type": "Sticky top navigation + theme switcher",
+    "structure": {
+      "left": "Logo (mark + text)",
+      "center": "6 Theme buttons (desktop)",
+      "right": "Mobile hamburger (mobile only)"
+    },
+    "theme_buttons": [
+      { "id": "current", "label": "1. Current", "theme_class": "theme-current" },
+      { "id": "matchtrade", "label": "2. Match-Trade", "theme_class": "theme-matchtrade" },
+      { "id": "b2broker", "label": "3. B2Broker", "theme_class": "theme-b2broker" },
+      { "id": "leverate", "label": "4. Leverate", "theme_class": "theme-leverate" },
+      { "id": "softfx", "label": "5. Soft-FX", "theme_class": "theme-softfx" },
+      { "id": "uptrader", "label": "6. UpTrader", "theme_class": "theme-uptrader" }
+    ],
+    "main_menu_links": [
+      { "label": "Solutions", "href": "/#solutions" },
+      { "label": "How It Works", "href": "/how-it-works/" },
+      { "label": "About", "href": "/about-us/" },
+      { "label": "FAQ", "href": "/faq/" },
+      { "label": "Contact", "href": "/contact/" }
+    ],
+    "behavior": {
+      "sticky": true,
+      "backdrop_blur": true,
+      "theme_switch": "Instant (body class change)",
+      "persist_theme": "localStorage key: forex-theme",
+      "keyboard_shortcuts": "Keys 1-6 switch themes",
+      "mobile": "Hamburger opens vertical theme list"
+    }
+  },
+
+  "header": {
+    "component": "Topbar",
+    "position": "sticky top-0 z-50",
+    "height": "64px",
+    "background": "var(--topbar-bg) with backdrop-filter: blur(12px)",
+    "border_bottom": "1px solid var(--border)",
+    "logo": {
+      "mark": {
+        "size": "36px",
+        "border_radius": "8px",
+        "background": "var(--accent)",
+        "color": "#ffffff",
+        "font_weight": 700,
+        "text": "FT"
+      },
+      "text": {
+        "font_weight": 700,
+        "font_size": "1.05rem",
+        "color": "var(--text)"
+      }
+    },
+    "theme_button": {
+      "font_size": "0.78rem",
+      "font_weight": 600,
+      "padding": "8px 12px",
+      "border_radius": "8px",
+      "border": "1px solid var(--border)",
+      "active_state": "background: var(--accent); color: #fff"
+    }
+  },
+
+  "footer": {
+    "background": "var(--footer-bg)",
+    "color": "var(--footer-text)",
+    "padding": "60px 0 30px",
+    "structure": {
+      "columns": 3,
+      "column_1": "Logo + short description",
+      "column_2": "Solutions links (list)",
+      "column_3": "Contact note"
+    },
+    "bottom": {
+      "border_top": "1px solid rgba(255,255,255,0.1)",
+      "risk_disclosure": {
+        "font_size": "0.78rem",
+        "opacity": 0.6
+      },
+      "copyright": {
+        "font_size": "0.85rem",
+        "opacity": 0.5
+      }
+    },
+    "solutions_links": [
+      "Brokerage Setup",
+      "MT5 White Label",
+      "Trading Server Hosting",
+      "Liquidity & Connectivity",
+      "Broker CRM & Back Office",
+      "Prop Firm Technology"
+    ]
+  },
+
+  "components": {
+    "button_primary": {
+      "padding": "12px 24px",
+      "border_radius": "var(--radius)",
+      "background": "var(--accent)",
+      "color": "#ffffff",
+      "font_weight": 600,
+      "hover": "filter: brightness(1.1); transform: translateY(-1px)"
+    },
+    "button_secondary": {
+      "padding": "12px 24px",
+      "border_radius": "var(--radius)",
+      "background": "transparent",
+      "border": "2px solid var(--border)",
+      "color": "var(--text)",
+      "hover": "border-color: var(--accent); color: var(--accent)"
+    },
+    "card": {
+      "background": "var(--card-bg)",
+      "border": "1px solid var(--border)",
+      "border_radius": "var(--radius)",
+      "padding": "28px",
+      "hover": "transform: translateY(-4px); box-shadow: var(--card-shadow)"
+    },
+    "section_header": {
+      "text_align": "center",
+      "max_width": "700px",
+      "margin_bottom": "48px",
+      "label": {
+        "font_size": "0.75rem",
+        "font_weight": 700,
+        "letter_spacing": "0.08em",
+        "text_transform": "uppercase",
+        "color": "var(--accent)"
+      }
+    },
+    "faq_item": {
+      "background": "var(--card-bg)",
+      "border": "1px solid var(--border)",
+      "border_radius": "var(--radius)",
+      "padding": "4px 20px"
+    },
+    "process_step": {
+      "number_size": "40px",
+      "number_background": "var(--accent)",
+      "number_color": "#ffffff",
+      "number_border_radius": "50%"
+    }
+  },
+
+  "important_rules": [
+    "All themes share the exact same HTML structure and content. Only CSS variables / body class change.",
+    "Never hard-code colors in components. Always use CSS variables.",
+    "Keep the topbar sticky on all pages.",
+    "Risk disclosure must appear in the footer of every page.",
+    "All pages must be fully responsive (mobile-first).",
+    "Theme preference should be saved in localStorage.",
+    "Use semantic HTML (section, article, nav, header, footer).",
+    "Images (if any) must have alt text and be lazy-loaded.",
+    "Forms must include proper labels and required field indicators.",
+    "Maintain consistent vertical rhythm using the spacing tokens."
+  ]
+}

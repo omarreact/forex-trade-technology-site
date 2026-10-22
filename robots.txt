@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://omarreact.github.io/forex-trade-technology-site/sitemap.xml
