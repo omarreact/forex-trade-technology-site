@@ -1,0 +1,4 @@
+Cloudflare Pages staging build trigger
+Repo: omarreact/forex-trade-technology-site
+Branch: cloudflare/migration-preview-20261029
+Source production remains on Vercel. This staging build must not receive the production custom domain until validation.
